@@ -17,7 +17,7 @@ API REST para una buena gestión de tareas grupales o personales, construida pri
 
 ---
 
-## 📝 CARACTERISTICAS
+## CARACTERISTICAS
 
 - Registro e inicio de sesión de usuarios con contraseñas totalmente hasheadas (uso de `bcrypt`)
 - Autenticación mediante **JSON Web Tokens** (uso de `Flash-JWT-Extended`)
