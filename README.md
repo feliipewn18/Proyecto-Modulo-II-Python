@@ -5,7 +5,7 @@ API REST para una buena gestión de tareas grupales o personales, construida pri
 ---
 
 ## TECNOLOGIAS USADAS
-|    **TECNOLOGÍA**    |   ** EMPLEAMIENTO **               |
+|    **TECNOLOGÍA**    |       **EMPLEAMIENTO**             |
 | Flask                |  Micro Framework Web               |
 | Flask-RESTFUL        |  Estructura de recursos/endpoints  |
 | Flask-SQLAlchemy     |  ORM para la Base de Datos         |
@@ -78,13 +78,13 @@ pip install -r requirements.txt
 
 ```env
 DATABASE_URL=postgresql://usuario:password@localhost:5432/todo_db
-JWT_SECRET_KEY=tu_clave_secreta
+JWT_SECRET_KEY=tu_clave
 ```
 
 5. Aplica migraciones:
 ```bash
 flask db init
-flask db migrate -m "create users and tasks tables"
+flask db migrate -m "se crea tabla de usuarios y tareas"
 flask db upgrade
 ```
 6. Levanta tu servidor:
@@ -353,7 +353,7 @@ Alterna el valor de `is_completed`(True o False).
 
 - Un usuario **solo** puede ver, editar o eliminar su propia cuenta.
 - Un usuario **solo** puede ver, editar, eliminar o completar sus propias tareas.
-- `priority` acepta únicamente: `low`, `medium`, `high`.
+- `priority` acepta únicamente valores como: `low`, `medium`, `high`.
 - El campo `password` nunca se expone en las respuestas de la API.
 
 ---
